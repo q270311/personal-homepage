@@ -1,24 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import Container from './common/Container';
+import Section from './common/Section';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          personal homepage
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Section
+        title="My skillset includes 🛠"
+        body={<ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JS</li>
+        </ul>}
+      />
+      <Section
+        title="What i want to learn next 🚀"
+        body={<ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JS</li>
+        </ul>}
+      />
+    </Container>
+
   );
 }
 
