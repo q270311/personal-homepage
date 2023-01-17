@@ -1,8 +1,10 @@
-import './App.css';
 import Container from './common/Container';
 import Section from './common/Section';
+import Portfolio from './features/Portfolio';
 
 function App() {
+
+
   return (
     <Container>
       <Section
@@ -21,6 +23,7 @@ function App() {
           <li>JS</li>
         </ul>}
       />
+      <Portfolio />
     </Container>
 
   );
