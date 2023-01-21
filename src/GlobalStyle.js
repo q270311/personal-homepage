@@ -12,9 +12,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        font-family: 'Inter', sans-serif;
-        background-color: ${({ theme }) => theme.color.whiteMode};
-        justify-content: center;
+        font-family: 'Inter', sans-serif;      
         word-break: break-word;
     }
 `; 
