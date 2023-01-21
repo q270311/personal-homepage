@@ -21,16 +21,15 @@ export const Label = styled.label`
 
     ${({ darkMode }) => darkMode && css`
         justify-content: flex-end;
-        background-color: ${({ theme }) => theme.color.mineShaft};
-        /* border: 1px solid ${({ theme }) => theme.color.white}; */
-        border: 1px solid ${({ theme }) => theme.color.iron};
+        background-color: ${({ theme }) => theme.color.slateGray};
+        border: 1px solid ${({ theme }) => theme.color.white}; 
     `};
 
     /* @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {   
     } */
 `;
 
-export const Ball = styled.div.attrs({className:'ball'})`
+export const Ball = styled.div.attrs({ className: 'ball' })`
     position: absolute;
     display: flex;
     align-items: center;
