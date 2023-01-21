@@ -8,6 +8,8 @@ export const theme = {
         iron: "#D1D5DA",
         slateGray: "#6E7E91",
         mineShaft: "rgba(54, 54, 54, 0.72)",
+        darkMode: "rgba(37, 37, 37, 1)",
+
     },
     breakpoint: {
         mobileMax: 767,
