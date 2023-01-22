@@ -2,14 +2,14 @@ import Body from './common/Body';
 import Container from './common/Container';
 import Section from './common/Section';
 import Portfolio from './features/Portfolio';
-import DarkModeToggleButton from './features/DarkModeTooggleButton'
+import HeroAbout from './features/HeroAbout';
+
 
 function App() {
   return (
-    <Body>
+    <Body>      
       <Container>
-        <DarkModeToggleButton />
-
+        <HeroAbout />
         <Section
           title="My skillset includes 🛠"
           body={<ul>
@@ -19,7 +19,7 @@ function App() {
           </ul>}
         />
         <Section
-          title="What i want to learn next 🚀"
+          title="What I want to learn next 🚀"
           body={<ul>
             <li>HTML</li>
             <li>CSS</li>
