@@ -10,6 +10,7 @@ export const theme = {
         mineShaft: "rgba(54, 54, 54, 0.72)",
         darkMode: "rgba(37, 37, 37, 1)",
         textSecondary: "rgba(110, 126, 145, 1)",
+        mainBlue: "rgba(37, 23, 235, 1)",
     },
     breakpoint: {
         mobileMax: 767,
