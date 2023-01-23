@@ -1,5 +1,32 @@
 import styled, { css } from "styled-components";
 
+export const Wrapper = styled.div`
+    align-self: flex-start;
+    justify-self: end;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+
+    width: 180px;
+    height: 26px;
+ `;
+
+export const DsscriptionOfButton = styled.p`    
+    height: 16px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: ${({ theme }) => theme.color.slateGray};
+`;
+
 export const Input = styled.input`    
     ${({ type }) => type === "checkbox" && css`
         opacity: 0; 
