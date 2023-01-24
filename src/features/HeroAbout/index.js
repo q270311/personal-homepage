@@ -14,7 +14,13 @@ const HeroAbout = () => {
                 <BeforeName darkMode={darkMode}>This is</BeforeName>
                 <Name darkMode={darkMode}>  Michał Bałdyga</Name>
                 <ShortDescription darkMode={darkMode}>👨‍🎓💻 I'm a passionate Frontend Developer in love with React, currently looking for new job opportunities.</ShortDescription>
-                <Button>📧Hire Me</Button>
+                <Button
+                    onClick={(e) => {
+                        window.location.href = "mailto:q270311@gmail.com";
+                        e.preventDefault();
+                    }}>
+                    📧Hire Me
+                </Button>
             </About>
             <DarkModeToggleButton />
         </Wrapper>
