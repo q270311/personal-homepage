@@ -3,21 +3,15 @@ import Container from './common/Container';
 import Section from './common/Section';
 import Portfolio from './features/Portfolio';
 import HeroAbout from './features/HeroAbout';
+import Skillset from './features/Skillset';
 
 
 function App() {
   return (
-    <Body>      
+    <Body>
       <Container>
         <HeroAbout />
-        <Section
-          title="My skillset includes 🛠"
-          body={<ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JS</li>
-          </ul>}
-        />
+        <Skillset />
         <Section
           title="What I want to learn next 🚀"
           body={<ul>
