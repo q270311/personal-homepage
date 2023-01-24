@@ -9,22 +9,21 @@ export const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0px;
-    gap: 12px;
-
+    gap: 12px;    
     width: 180px;
-    height: 26px;
  `;
 
-export const DsscriptionOfButton = styled.p`    
-    height: 16px;
+export const DsscriptionOfButton = styled.p`  
+    padding-top: 10px;
     font-style: normal;
     font-weight: 700;
-    font-size: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 12px;    
     text-transform: uppercase;
     color: ${({ theme }) => theme.color.slateGray};
+
+    ${({ darkMode }) => darkMode && css`
+        color: ${({ theme }) => theme.color.white};
+    `};
 `;
 
 export const Input = styled.input`    
@@ -56,7 +55,7 @@ export const Label = styled.label`
     } */
 `;
 
-export const Ball = styled.div.attrs({ className: 'ball' })`
+export const Ball = styled.div`
     position: absolute;
     display: flex;
     align-items: center;

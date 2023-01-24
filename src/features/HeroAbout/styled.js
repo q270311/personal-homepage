@@ -1,5 +1,4 @@
-import styled from "styled-components";
-
+import styled, {css} from "styled-components";
 
 export const Wrapper = styled.header`
     display: grid;
@@ -10,21 +9,20 @@ export const Wrapper = styled.header`
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {   
     }
 `;
-export const About = styled.div`
-    width: 633px;
-    height: 247px;
-    margin-left: 66px;
-`;
 
 export const Img = styled.img`
     width: 398px;
     height: 398px;
     border-radius: 50%;
     border: 1px solid ${({ theme }) => theme.color.lightGrey};
-
-    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {   
-    }
 `;
+
+export const About = styled.div`
+    width: 633px;
+    height: 247px;
+    margin-left: 66px;
+`;
+
 export const BeforeName = styled.p`    
     font-style: normal;
     font-weight: 700;
@@ -32,6 +30,10 @@ export const BeforeName = styled.p`
     line-height: 130%;
     text-transform: uppercase;
     color: ${({ theme }) => theme.color.slateGray};
+
+    ${({ darkMode }) => darkMode && css`
+        color: ${({ theme }) => theme.color.white};
+    `};
 `;
 export const Name = styled.p`    
     font-style: normal;
@@ -40,6 +42,10 @@ export const Name = styled.p`
     line-height: 46px;
     letter-spacing: 0.05em;
     color: ${({ theme }) => theme.color.blackText};
+
+    ${({ darkMode }) => darkMode && css`
+        color: ${({ theme }) => theme.color.white};
+    `};
 `;
 export const ShortDescription = styled.p`    
     font-style: normal;
@@ -48,6 +54,10 @@ export const ShortDescription = styled.p`
     line-height: 140%;
     letter-spacing: 0.05em;
     color: ${({ theme }) => theme.color.slateGray};
+
+    ${({ darkMode }) => darkMode && css`
+        color: ${({ theme }) => theme.color.white};
+    `};
 `;
 
 export const Button = styled.button`    
