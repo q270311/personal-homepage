@@ -11,6 +11,8 @@ export const theme = {
         darkMode: "rgba(37, 37, 37, 1)",
         textSecondary: "rgba(110, 126, 145, 1)",
         mainBlue: "rgba(37, 23, 235, 1)",
+        violet02: "rgba(9, 10, 51, 0.02)",
+        violet03: "rgba(9, 10, 51, 0.03)",
     },
     breakpoint: {
         mobileMax: 767,
