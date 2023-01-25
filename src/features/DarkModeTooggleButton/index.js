@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { selectThemeMode, toggleThemeMode } from '../../appSlice';
 import { Wrapper, Input, Label, Ball, DsscriptionOfButton } from './styled';
-import Sun from './sun';
+import Sun from './SVGSun';
 
 const DarkModeToggleButton = () => {
     const darkMode = useSelector(selectThemeMode);
