@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import { selectProjects, selectStatus, selectError } from '../portfolioSlice';
-import { Spinner } from './styled';
+import { Wrapper, Spinner } from './styled';
+import Tile from './Tile';
 
 const Portfolio = () => {
     const projects = useSelector(selectProjects);
@@ -25,15 +26,16 @@ const Portfolio = () => {
         );
     }
     return (
-        <>
-            <ul>
-                {projects.map(project => (
-                    <li key={project.id}>
-                        {project.name}
-                    </li>
-                ))}
-            </ul>
-        </>
+        <Wrapper>
+            {projects.map(project => (
+                <Tile 
+                    head={project.name}
+                    body={project.description}
+                    linkRepo={project.html_url} 
+                    linkDemo={`https://${project.owner.login}.github.io/${project.name}/`}
+                />   
+            ))}
+        </Wrapper>
     );
 };
 
