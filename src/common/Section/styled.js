@@ -1,10 +1,14 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 
 export const StyledSection = styled.section`
-    background-color: white;
+    background-color: ${({ theme }) => theme.color.white};
     padding: 36px;
     box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
     border-radius: 4px;
+
+    ${({ darkMode }) => darkMode && css`
+        background-color: ${({ theme }) => theme.color.mineShaft};
+    `};
 `;
 
 export const Title = styled.div`
@@ -19,6 +23,10 @@ export const Title = styled.div`
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: ${({ theme }) => theme.color.lightGrey};
+
+    ${({ darkMode }) => darkMode && css`
+        color: ${({ theme }) => theme.color.white};
+    `};
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {   
     }
