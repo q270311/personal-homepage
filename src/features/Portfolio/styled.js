@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Spinner = styled.div.attrs({className:'spinner-border'})`
+    margin-top: 50px;
     height: 160px; 
     width: 160px; 
     border-width:11.38px; 
