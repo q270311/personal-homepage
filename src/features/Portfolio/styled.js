@@ -3,10 +3,10 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 32px;    
+    gap: 32px;     
 `;
 
-export const Spinner = styled.div.attrs({className:'spinner-border'})`
+export const Spinner = styled.div.attrs({ className: 'spinner-border' })`
     margin-top: 50px;
     height: 160px; 
     width: 160px; 

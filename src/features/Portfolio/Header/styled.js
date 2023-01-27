@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Wrapper = styled.div`
     display: flex;
@@ -15,6 +15,10 @@ export const Title = styled.p`
     color: ${({ theme }) => theme.color.blackText};
     margin-top: 13px;
     margin-bottom: 10px;
+
+    ${({ darkMode }) => darkMode && css`
+        color: ${({ theme }) => theme.color.white};
+    `};
 `;
 export const SubTitle = styled.p`
     font-style: normal;
@@ -23,6 +27,10 @@ export const SubTitle = styled.p`
     line-height: 28px;    
     letter-spacing: 0.05em;
     color: ${({ theme }) => theme.color.blackText}; 
+
+    ${({ darkMode }) => darkMode && css`
+        color: ${({ theme }) => theme.color.white};
+    `};
 `;
 
 export const Button = styled.button`
@@ -49,4 +57,8 @@ export const Strong = styled.strong`
     text-align: center;
     letter-spacing: 0.05em;
     color: ${({ theme }) => theme.color.blackText}; 
+
+    ${({ darkMode }) => darkMode && css`
+        color: ${({ theme }) => theme.color.white};
+    `};
 `;

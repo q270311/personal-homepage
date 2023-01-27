@@ -1,7 +1,8 @@
 import { useSelector } from "react-redux";
+import { selectThemeMode } from '../../appSlice';
 import { selectProjects, selectStatus, selectError } from '../portfolioSlice';
 import { Wrapper, Spinner } from './styled';
-import {SubTitle, Button, Strong} from './Header/styled';
+import { SubTitle, Button, Strong } from './Header/styled';
 import SVGDanger from './SVGDanger';
 
 import Tile from './Tile';
@@ -11,22 +12,23 @@ const Portfolio = () => {
     const projects = useSelector(selectProjects);
     const status = useSelector(selectStatus);
     const error = useSelector(selectError);
+    const darkMode = useSelector(selectThemeMode);
 
     if (status) {
         return (
-            <PortfolioHeader>
-                <SubTitle>Please wait, projects are being loaded...</SubTitle>
+            <PortfolioHeader darkMode={darkMode}>
+                <SubTitle >Please wait, projects are being loaded...</SubTitle>
                 <div><Spinner /></div>
-            </PortfolioHeader>    
+            </PortfolioHeader>
         );
     }
     if (error) {
         return (
-            <PortfolioHeader>
-                <div><SVGDanger /></div>
-                <Strong>Ooops! Somethink went wrong...</Strong>
-                <SubTitle>Sorry, failed to load Github projects.<br/>
-                You can check them directly on Github.</SubTitle>
+            <PortfolioHeader darkMode={darkMode}>
+                <div><SVGDanger color={darkMode ? "white" : "black"} /></div>
+                <Strong darkMode={darkMode}>Ooops! Somethink went wrong...</Strong>
+                <SubTitle darkMode={darkMode}>Sorry, failed to load Github projects.<br />
+                    You can check them directly on Github.</SubTitle>
                 <div><Button
                     onClick={(e) => {
                         window.location.href = "https://github.com/";
@@ -39,10 +41,11 @@ const Portfolio = () => {
     }
     return (
         <div>
-            <PortfolioHeader />
+            <PortfolioHeader darkMode={darkMode} />
             <Wrapper>
                 {projects.map(project => (
                     <Tile
+                        darkMode={darkMode}
                         head={project.name}
                         body={project.description}
                         linkRepo={project.html_url}
