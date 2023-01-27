@@ -3,6 +3,7 @@ import Container from './common/Container';
 import Portfolio from './features/Portfolio';
 import HeroAbout from './features/HeroAbout';
 import Set from './features/Set';
+import ContactsSocials from './features/Contact&socials';
 
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
         <Set skills={skills} title="My skillset includes 🛠" />
         <Set skills={skillsToLearnNext} title="What I want to learn next 🚀" />
         <Portfolio />
+        <ContactsSocials />
       </Container>
     </Body>
   );
