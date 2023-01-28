@@ -5,7 +5,8 @@ export const StyledTile = styled.div`
     flex-direction: column;
     padding: 56px;
     
-    background: ${({ theme }) => theme.color.white};
+    background-color: ${({ theme }) => theme.color.white};
+    transition: background-color 800ms linear;
     border: 6px solid ${({ theme }) => theme.color.iron};
     box-shadow: 0px -2px 50px ${({ theme }) => theme.color.violet02}, ${({ theme }) => theme.color.violet03};
     border-radius: 4px;
