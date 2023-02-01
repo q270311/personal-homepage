@@ -12,7 +12,8 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        font-family: 'Inter', sans-serif;      
+        font-family: 'Inter', sans-serif;
+        font-style: normal;      
         word-break: break-word;
     }
 `; 
