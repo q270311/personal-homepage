@@ -6,15 +6,19 @@ export const Wrapper = styled.div`
 
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     padding: 0px;
-    gap: 12px;    
-    width: 180px;
+    width: 170px;
+
+    ${({ darkMode }) => darkMode && css`
+        width: 50px;
+    `};
  `;
 
 export const DsscriptionOfButton = styled.p`  
-    padding-top: 10px;    
+    padding-top: 10px;
+    margin-right:10px ;
     font-weight: 700;
     font-size: 12px;    
     text-transform: uppercase;
@@ -23,6 +27,10 @@ export const DsscriptionOfButton = styled.p`
     ${({ darkMode }) => darkMode && css`
         color: ${({ theme }) => theme.color.white};
     `};
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
+        visibility:hidden;  
+    } 
 `;
 
 export const Input = styled.input`    
@@ -48,10 +56,7 @@ export const Label = styled.label`
         justify-content: flex-end;
         background-color: ${({ theme }) => theme.color.slateGray};
         border: 1px solid ${({ theme }) => theme.color.white}; 
-    `};
-
-    /* @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {   
-    } */
+    `};    
 `;
 
 export const Ball = styled.div`
