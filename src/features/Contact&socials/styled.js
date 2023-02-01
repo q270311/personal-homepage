@@ -1,12 +1,13 @@
 import styled, { css } from "styled-components";
 
 export const Wrapper = styled.header`
-    width: 700px;
+    max-width: 700px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 
-    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {   
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
+        padding:16px ;
     }
 `;
 
@@ -31,6 +32,12 @@ export const Name = styled.p`
     ${({ darkMode }) => darkMode && css`
         color: ${({ theme }) => theme.color.white};
     `};
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
+        font-size: 18px;
+        line-height: 22px;
+        margin:12px 0px;
+    }
 `;
 export const ShortDescription = styled.p`        
     font-weight: 400;
@@ -44,10 +51,21 @@ export const ShortDescription = styled.p`
     ${({ darkMode }) => darkMode && css`
         color: ${({ theme }) => theme.color.white};
     `};
+    
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
+        font-size: 14px;
+        line-height: 17px;
+    }
+
 `;
 export const SocialsMedia = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 48px);
-    grid-column-gap: 25px;
+    grid-column-gap: 26px;
+    padding-bottom: 16px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
+        grid-column-gap: 16px;
+    }
 `;
 
