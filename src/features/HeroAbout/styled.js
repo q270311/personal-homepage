@@ -6,21 +6,35 @@ export const Wrapper = styled.header`
     align-items: center;    
     border-bottom-color: ${({ theme }) => theme.color.lightGrey};
 
-    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {   
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
+        padding:16px;
+        grid-template-columns: 50% 50%;        
     }
 `;
 
 export const Img = styled.img`
-    width: 398px;
-    height: 398px;
+    max-width: 398px;
+    max-height: 398px;
     border-radius: 50%;
     border: 1px solid ${({ theme }) => theme.color.lightGrey};
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
+        object-fit: cover;
+        width: 100%;
+    }
 `;
 
 export const About = styled.div`
-    width: 633px;
-    height: 247px;
+    max-width: 633px;
+    max-height: 247px;
     margin-left: 66px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
+        order: 1;
+        grid-column: span 2;
+        margin: 0px;
+        width: 100%;
+    }
 `;
 
 export const BeforeName = styled.p`    
@@ -33,6 +47,12 @@ export const BeforeName = styled.p`
     ${({ darkMode }) => darkMode && css`
         color: ${({ theme }) => theme.color.white};
     `};
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
+        margin-top:12px;
+        margin-bottom:8px;
+    }
+
 `;
 export const Name = styled.p`
     font-weight: 900;
@@ -44,6 +64,13 @@ export const Name = styled.p`
     ${({ darkMode }) => darkMode && css`
         color: ${({ theme }) => theme.color.white};
     `};
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
+        margin:0px;
+        padding:0px;
+        font-size: 22px;
+        line-height: 27px;
+    }
 `;
 export const ShortDescription = styled.p`    
     font-weight: 400;
@@ -55,6 +82,12 @@ export const ShortDescription = styled.p`
     ${({ darkMode }) => darkMode && css`
         color: ${({ theme }) => theme.color.white};
     `};
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
+        margin-top:16px;
+        margin-bottom:24px;
+        font-size: 17px;
+    }
 `;
 
 export const Button = styled.button`    
@@ -76,4 +109,15 @@ export const Button = styled.button`
     background-color: ${({ theme }) => theme.color.mainBlue};
     border: 1px solid ${({ theme }) => theme.color.mainBlue};
     border-radius: 4px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+
+        width: 138px;
+        height: 46px;
+        margin: 0px;
+        padding:0px;
+    }
 `;
