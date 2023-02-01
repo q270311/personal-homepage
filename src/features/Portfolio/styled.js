@@ -3,7 +3,13 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 32px;     
+    gap: 32px;  
+    
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
+        grid-template-columns: 1fr;
+        margin: 14px;
+        grid-gap: 16px;
+    }
 `;
 
 export const Spinner = styled.div.attrs({ className: 'spinner-border' })`

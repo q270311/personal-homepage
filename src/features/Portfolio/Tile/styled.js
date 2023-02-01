@@ -14,6 +14,10 @@ export const StyledTile = styled.div`
     ${({ darkMode }) => darkMode && css`
         background-color: ${({ theme }) => theme.color.mineShaft};
     `};
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
+        padding: 24px;
+    }
 `;
 export const StyledH1 = styled.h1`
     font-weight: 700;
@@ -25,6 +29,12 @@ export const StyledH1 = styled.h1`
     ${({ darkMode }) => darkMode && css`
         color: ${({ theme }) => theme.color.white};
     `};
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom:8px
+    }
 `;
 
 export const StyledP = styled.p`    
@@ -37,4 +47,10 @@ export const StyledP = styled.p`
     ${({ darkMode }) => darkMode && css`
         color: ${({ theme }) => theme.color.white};
     `};
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
+        margin:8px 0px;
+        font-size: 14px;
+        line-height: 17px;
+    }
 `;

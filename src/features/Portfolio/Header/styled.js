@@ -18,6 +18,11 @@ export const Title = styled.p`
     ${({ darkMode }) => darkMode && css`
         color: ${({ theme }) => theme.color.white};
     `};
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
+        font-size: 18px;
+        line-height: 22px;
+    }
 `;
 export const SubTitle = styled.p`    
     font-weight: 400;
@@ -29,6 +34,11 @@ export const SubTitle = styled.p`
     ${({ darkMode }) => darkMode && css`
         color: ${({ theme }) => theme.color.white};
     `};
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
+        font-size: 17px;
+        line-height: 140%;
+    }
 `;
 
 export const Button = styled.button`
