@@ -24,7 +24,6 @@ export const About = styled.div`
 `;
 
 export const BeforeName = styled.p`    
-    font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 130%;
@@ -35,8 +34,7 @@ export const BeforeName = styled.p`
         color: ${({ theme }) => theme.color.white};
     `};
 `;
-export const Name = styled.p`    
-    font-style: normal;
+export const Name = styled.p`
     font-weight: 900;
     font-size: 38px;
     line-height: 46px;
@@ -48,7 +46,6 @@ export const Name = styled.p`
     `};
 `;
 export const ShortDescription = styled.p`    
-    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 140%;
@@ -66,8 +63,7 @@ export const Button = styled.button`
     justify-content: center;
     align-items: center;
     padding: 12px 16px;
-    gap: 16px;
-    font-style: normal;
+    gap: 16px;    
     font-weight: 400;
     font-size: 20.0584px;
     line-height: 24px;

@@ -27,8 +27,7 @@ export const StyledH1 = styled.h1`
     `};
 `;
 
-export const StyledP = styled.p`
-    font-style: normal;
+export const StyledP = styled.p`    
     font-weight: 400;
     font-size: 18px;
     line-height: 140%;

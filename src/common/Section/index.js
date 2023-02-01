@@ -8,7 +8,7 @@ const Section = ({ title, body }) => {
         <StyledSection darkMode={darkMode}>
             <Title darkMode={darkMode}>
                 {title}
-            </Title>
+            </Title> 
             {body}
         </StyledSection>
     );

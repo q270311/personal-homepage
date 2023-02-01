@@ -6,8 +6,7 @@ export const Wrapper = styled.div`
     justify-content: center; 
     text-align:center;
 `;
-export const Title = styled.p`
-    font-style: normal;
+export const Title = styled.p`    
     font-weight: 900;
     font-size: 30px;
     line-height: 36px;
@@ -20,8 +19,7 @@ export const Title = styled.p`
         color: ${({ theme }) => theme.color.white};
     `};
 `;
-export const SubTitle = styled.p`
-    font-style: normal;
+export const SubTitle = styled.p`    
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;    
@@ -41,7 +39,6 @@ export const Button = styled.button`
     border-radius: 4px;
     background-color: ${({ theme }) => theme.color.mainBlue}; 
 
-    font-style: normal;
     font-weight: 600;
     letter-spacing: 0.05em;
     color: ${({ theme }) => theme.color.white}; 
@@ -49,8 +46,7 @@ export const Button = styled.button`
 export const Strong = styled.strong`
     margin-top: 35px;
     margin-bottom: 35px;
-
-    font-style: normal;
+    
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;

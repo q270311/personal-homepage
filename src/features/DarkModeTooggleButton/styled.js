@@ -14,8 +14,7 @@ export const Wrapper = styled.div`
  `;
 
 export const DsscriptionOfButton = styled.p`  
-    padding-top: 10px;
-    font-style: normal;
+    padding-top: 10px;    
     font-weight: 700;
     font-size: 12px;    
     text-transform: uppercase;

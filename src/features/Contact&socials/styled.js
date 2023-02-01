@@ -10,8 +10,7 @@ export const Wrapper = styled.header`
     }
 `;
 
-export const BeforeName = styled.p`   
-    font-style: normal;
+export const BeforeName = styled.p`  
     font-weight: 700;
     font-size: 12px;
     line-height: 130%;
@@ -22,8 +21,7 @@ export const BeforeName = styled.p`
         color: ${({ theme }) => theme.color.white};
     `};
 `;
-export const Name = styled.p`  
-    font-style: normal;
+export const Name = styled.p`      
     font-weight: 900;
     font-size: 32px;
     line-height: 39px;
@@ -34,8 +32,7 @@ export const Name = styled.p`
         color: ${({ theme }) => theme.color.white};
     `};
 `;
-export const ShortDescription = styled.p`    
-    font-style: normal;
+export const ShortDescription = styled.p`        
     font-weight: 400;
     font-size: 20px;
     line-height: 140%;
