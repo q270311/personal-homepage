@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
 import { selectThemeMode } from '../../appSlice';
 import { Wrapper, Img, About, BeforeName, Name, ShortDescription, Button } from './styled';
-import DarkModeToggleButton from './../DarkModeTooggleButton'
+import DarkModeToggleButton from './../DarkModeToggleButton'
 import MBPicture from './../../img/MB.png';
 
 const HeroAbout = () => {
