@@ -110,6 +110,13 @@ export const Button = styled.button`
     border: 1px solid ${({ theme }) => theme.color.mainBlue};
     border-radius: 4px;
 
+    &:hover {
+        box-shadow: rgb(140 194 255) 2px -2px 0px, 
+        rgb(140 194 255) -2px 2px 0px, 
+        rgb(140 194 255) 2px 2px 0px, 
+        rgb(140 194 255) -2px -2px 0px;
+    }
+
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
         font-weight: 600;
         font-size: 18px;
