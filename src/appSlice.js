@@ -1,13 +1,15 @@
 import { createSlice } from "@reduxjs/toolkit";
+import {saveThemeInLocalStorage,getThemeFromLocalStorage} from "./themeLocalStorage";
 
 const appSlice = createSlice({
     name: "app",
     initialState: {
-        darkMode: false,
+        darkMode: getThemeFromLocalStorage(),
     },
     reducers: {
         toggleThemeMode: (state) => {
             state.darkMode = !state.darkMode;
+            saveThemeInLocalStorage(state.darkMode);
         },
     },
 });
