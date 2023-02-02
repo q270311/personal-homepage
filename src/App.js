@@ -33,11 +33,11 @@ function App() {
   ];
   const skillsToLearnNext = [
     { id: 1, name: "React Context" },
-    { id: 1, name: "Node.js" },
-    { id: 1, name: "Cypress" },
-    { id: 1, name: "Unit testing" },
-    { id: 1, name: "TypeScript" },
-    { id: 1, name: "JS classes" },
+    { id: 2, name: "Node.js" },
+    { id: 3, name: "Cypress" },
+    { id: 4, name: "Unit testing" },
+    { id: 5, name: "TypeScript" },
+    { id: 6, name: "JS classes" },
   ];
 
   return (
