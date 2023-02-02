@@ -45,13 +45,14 @@ const Portfolio = () => {
             <Wrapper>
                 {projects.map(project => (
                     <Tile
+                        key={project.id}
                         darkMode={darkMode}
                         head={project.name}
                         body={project.description}
                         linkRepo={project.html_url}
                         linkDemo={`https://${project.owner.login}.github.io/${project.name}/`}
                     />
-                ))}
+                ))} 
             </Wrapper>
         </div>
     );
