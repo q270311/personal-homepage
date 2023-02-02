@@ -15,6 +15,10 @@ export const StyledTile = styled.div`
         background-color: ${({ theme }) => theme.color.mineShaft};
     `};
 
+    &:hover {
+        border-color: rgba(3, 102, 214, 0.2);
+    }
+
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
         padding: 24px;
     }
