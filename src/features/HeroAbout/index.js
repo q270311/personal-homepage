@@ -16,7 +16,7 @@ const HeroAbout = () => {
                 <ShortDescription darkMode={darkMode}>👨‍🎓💻 I'm a passionate Frontend Developer in love with React, currently looking for new job opportunities.</ShortDescription>
                 <Button
                     onClick={(e) => {
-                        window.location.href = "mailto:q270311@gmail.com";
+                        window.location.href = "mailto:baldyga.software@gmail.com";
                         e.preventDefault();
                     }}>
                     📧Hire Me

@@ -11,7 +11,7 @@ const ContactsSocials = () => {
     return (
         <Wrapper>
             <BeforeName darkMode={darkMode}>Let’s talk!</BeforeName>
-            <Name darkMode={darkMode}>michal_baldyga@wp.pl</Name>
+            <Name darkMode={darkMode}>baldyga.software@gmail.com</Name>
             <ShortDescription darkMode={darkMode}>I’m always open to new projects whenever I have the time. If you have a website, dashboard or mobile app in mind and need some help to make your ideas come to life, feel free to conatct me</ShortDescription>
             <SocialsMedia>
                 <a href='https://github.com/q270311'><SVGGithub color={darkMode ? "white" : "black"} /></a>
