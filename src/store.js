@@ -4,7 +4,7 @@ import rootSaga from "./rootSaga";
 import portfolioReducer from './features/portfolioSlice';
 import appReducer from './appSlice';
 
-const sagaMiddleware= createSagaMiddleware();
+const sagaMiddleware = createSagaMiddleware();
 
 const store = configureStore({
     reducer: {
