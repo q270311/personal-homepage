@@ -2,7 +2,6 @@
 # Personal homepage
 
 ![How it us gif](src/img/PersonalHomepage.gif)
-![How it us on mobile gif](src/img/PersonalHomepageMobile.gif)
 
 ## Demo
 https://q270311.github.io/personal-homepage/
@@ -12,6 +11,14 @@ https://q270311.github.io/personal-homepage/
 ## Description 
 Project implemented during the _Frontend Developer od podstaw_ course at the **YouCode** -  online programming school.
 
+This app is my business card. Is also my portfolio.
+The website was written using the knowledge gained during the course. Such as: React, redux-saga, downloading data from the API.
+
+The website is responsive so it displays very well on mobile devices. For your convenience, you can change the page background to dark. I save this setting in your browser.
+
+I list my skills in detail on the page.
+On the page I give links from my projects on github.
+The most important project during which I learned the most was a group project - a movie browser.
 
 
 ## Languages
