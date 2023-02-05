@@ -52,7 +52,7 @@ const Portfolio = () => {
                         linkRepo={project.html_url}
                         linkDemo={`https://${project.owner.login}.github.io/${project.name}/`}
                     />
-                ))} 
+                ))}
             </Wrapper>
         </div>
     );

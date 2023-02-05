@@ -1,4 +1,5 @@
 import * as React from "react";
+
 const SVGLogoGithub = (props) => (
   <svg
     width={40}
