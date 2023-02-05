@@ -22,14 +22,15 @@ function App() {
     { id: 12, name: "React Hooks" },
     { id: 13, name: "Error handling" },
     { id: 14, name: "Working with API (fetch, axios)" },
-    /*         {id: 15, name: "JavaScript: ES6+"},
-            {id: 16, name: "Promises, Async/Await"},
-            {id: 17, name: "GitHub Pull Requests & Review"},
-            {id: 18, name: "Trello"},
-            {id: 19, name: "Scrum"},
-            {id: 20, name: "NPM"},
-            {id: 21, name: "React"},
-            {id: 22, name: "Git"} */
+    // eslint-disable-next-line
+    { id: 15, name: "JavaScript: ES6+" },
+    { id: 16, name: "Promises, Async/Await" },
+    { id: 17, name: "GitHub Pull Requests & Review" },
+    { id: 18, name: "Trello" },
+    { id: 19, name: "Scrum" },
+    { id: 20, name: "NPM" },
+    { id: 21, name: "React" },
+    { id: 22, name: "Git" }
   ];
   const skillsToLearnNext = [
     { id: 1, name: "React Context" },
