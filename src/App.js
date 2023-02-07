@@ -1,10 +1,16 @@
+import { ThemeProvider } from 'styled-components';
+import { useState, useEffect } from 'react';
+// import { theme } from './theme';
+import { GlobalStyle } from './GlobalStyle';
 import Body from './common/Body';
 import Container from './common/Container';
 import Portfolio from './features/Portfolio';
 import HeroAbout from './features/HeroAbout';
 import Set from './features/Set';
 import ContactsSocials from './features/Contact&socials';
-
+import { themes } from './allThemes.js';
+import { useSelector } from "react-redux";
+import { selectThemeMode } from './appSlice';
 
 function App() {
   const skills = [
@@ -41,16 +47,27 @@ function App() {
     { id: 6, name: "JS classes" },
   ];
 
+  const darkMode = useSelector(selectThemeMode);
+  const [selectedTheme, setSelectedTheme] = useState(themes.whiteMode);
+
+  useEffect(() => {
+    darkMode ? setSelectedTheme(themes.darkMode) : setSelectedTheme(themes.whiteMode);
+  }, [darkMode]);
+
   return (
-    <Body>
-      <Container>
-        <HeroAbout />
-        <Set skills={skills} title="My skillset includes 🛠" />
-        <Set skills={skillsToLearnNext} title="What I want to learn next 🚀" />
-        <Portfolio />
-        <ContactsSocials />
-      </Container>
-    </Body>
+    <ThemeProvider theme={selectedTheme}>
+      <GlobalStyle />
+      <Body>
+        <Container>
+          {/* <HeroAbout /> */}
+          {/* <Set skills={skills} title="My skillset includes 🛠" /> */}
+          {/*  */}<Set skills={skillsToLearnNext} title="What I want to learn next 🚀" />
+          {/*   <Portfolio />
+          <ContactsSocials /> */}
+        </Container>
+      </Body>
+    </ThemeProvider>
+
   );
 }
 
