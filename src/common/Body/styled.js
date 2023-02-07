@@ -1,11 +1,7 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const StyledBody = styled.div`
     width: 100%;
-    background-color: ${({ theme }) => theme.color.whiteMode}; 
+    background-color: ${({ theme }) => theme.color.mainBackground}; 
     transition: background-color 800ms linear;
-
-    ${({ darkMode }) => darkMode && css`
-        background-color: ${({ theme }) => theme.color.darkMode};
-    `};
 `;
