@@ -2,7 +2,6 @@ import { ThemeProvider } from 'styled-components';
 import { useState, useEffect } from 'react';
 // import { theme } from './theme';
 import { GlobalStyle } from './GlobalStyle';
-import Body from './common/Body';
 import Container from './common/Container';
 import Portfolio from './features/Portfolio';
 import HeroAbout from './features/HeroAbout';
@@ -56,18 +55,15 @@ function App() {
 
   return (
     <ThemeProvider theme={selectedTheme}>
-      <GlobalStyle />
-      <Body>
+      <GlobalStyle />      
         <Container>
-          {/* <HeroAbout /> */}
-          {/* <Set skills={skills} title="My skillset includes 🛠" /> */}
-          {/*  */}<Set skills={skillsToLearnNext} title="What I want to learn next 🚀" />
-          {/*   <Portfolio />
-          <ContactsSocials /> */}
-        </Container>
-      </Body>
+          <HeroAbout />
+          <Set skills={skills} title="My skillset includes 🛠" />
+          <Set skills={skillsToLearnNext} title="What I want to learn next 🚀" />
+          <Portfolio />
+          <ContactsSocials /> 
+        </Container>      
     </ThemeProvider>
-
   );
 }
 
