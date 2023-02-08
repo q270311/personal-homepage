@@ -1,5 +1,5 @@
 export const theme = {
-    color: {
+   /*  color: {
         white: "#ffffff",
         whiteMode: "#FBFBFE",
         blackText: "#252525",
@@ -16,5 +16,5 @@ export const theme = {
     },
     breakpoint: {
         mobileMax: 767,
-    },
+    }, */
 };
