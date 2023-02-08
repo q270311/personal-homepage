@@ -11,9 +11,9 @@ export const Wrapper = styled.div`
     padding: 0px;
     width: 170px;
 
-    ${({ darkMode }) => darkMode && css`
-        width: 50px;
-    `};
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
+        width: 50px; 
+    }
  `;
 
 export const DsscriptionOfButton = styled.p`  
@@ -22,11 +22,7 @@ export const DsscriptionOfButton = styled.p`
     font-weight: 700;
     font-size: 12px;    
     text-transform: uppercase;
-    color: ${({ theme }) => theme.color.slateGray};
-
-    ${({ darkMode }) => darkMode && css`
-        color: ${({ theme }) => theme.color.white};
-    `};
+    color: ${({ theme }) => theme.color.textColor};
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
         visibility:hidden;  
@@ -48,14 +44,12 @@ export const Label = styled.label`
     padding: 3px;
     height: 26px;
     width: 48px;
-    background-color: ${({ theme }) => theme.color.mercury};
-    border: 1px solid ${({ theme }) => theme.color.iron};
+    background-color: ${({ theme }) => theme.color.backgroundToggleButton};
+    border: 1px solid ${({ theme }) => theme.color.borderToggleButton};
     border-radius: 50px;
 
     ${({ darkMode }) => darkMode && css`
         justify-content: flex-end;
-        background-color: ${({ theme }) => theme.color.slateGray};
-        border: 1px solid ${({ theme }) => theme.color.white}; 
     `};    
 `;
 
@@ -68,11 +62,10 @@ export const Ball = styled.div`
     width: 20px; 
     border:none;
     border-radius: 50%;
-    background-color: ${({ theme }) => theme.color.slateGray};
+    background-color: ${({ theme }) => theme.color.textColor};
 
     ${({ darkMode }) => darkMode && css`
         justify-content: flex-end;
-        background-color: ${({ theme }) => theme.color.white};
         align-items: center;
         justify-content: center;
     `};

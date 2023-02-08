@@ -11,7 +11,7 @@ const DarkModeToggleButton = () => {
         <Wrapper>
             <DsscriptionOfButton darkMode={darkMode}>dark mode off</DsscriptionOfButton>
             <Input type="checkbox" id="chk" onChange={() => { dispatch(toggleThemeMode()) }} />
-            <Label className="label" htmlFor="chk" darkMode={darkMode}>
+            <Label className="label" htmlFor="chk">
                 <Ball darkMode={darkMode}>
                     <Sun color={darkMode ? "black" : "white"} />
                 </Ball>
