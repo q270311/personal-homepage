@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
     display: flex;
@@ -11,13 +11,9 @@ export const Title = styled.p`
     font-size: 30px;
     line-height: 36px;
     letter-spacing: 0.05em;
-    color: ${({ theme }) => theme.color.blackText};
+    color: ${({ theme }) => theme.color.textHeader};
     margin-top: 13px;
     margin-bottom: 10px;
-
-    ${({ darkMode }) => darkMode && css`
-        color: ${({ theme }) => theme.color.white};
-    `};
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
         font-size: 18px;
@@ -29,11 +25,7 @@ export const SubTitle = styled.p`
     font-size: 20px;
     line-height: 28px;    
     letter-spacing: 0.05em;
-    color: ${({ theme }) => theme.color.blackText}; 
-
-    ${({ darkMode }) => darkMode && css`
-        color: ${({ theme }) => theme.color.white};
-    `};
+    color: ${({ theme }) => theme.color.textHeader}; 
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
         font-size: 17px;
@@ -62,9 +54,5 @@ export const Strong = styled.strong`
     line-height: 29px;
     text-align: center;
     letter-spacing: 0.05em;
-    color: ${({ theme }) => theme.color.blackText}; 
-
-    ${({ darkMode }) => darkMode && css`
-        color: ${({ theme }) => theme.color.white};
-    `};
+    color: ${({ theme }) => theme.color.textHeader}; 
 `;

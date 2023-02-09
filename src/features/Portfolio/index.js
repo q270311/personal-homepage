@@ -16,7 +16,7 @@ const Portfolio = () => {
 
     if (status) {
         return (
-            <PortfolioHeader darkMode={darkMode}>
+            <PortfolioHeader>
                 <SubTitle >Please wait, projects are being loaded...</SubTitle>
                 <div><Spinner /></div>
             </PortfolioHeader>
@@ -24,10 +24,10 @@ const Portfolio = () => {
     }
     if (error) {
         return (
-            <PortfolioHeader darkMode={darkMode}>
+            <PortfolioHeader>
                 <div><SVGDanger color={darkMode ? "white" : "black"} /></div>
-                <Strong darkMode={darkMode}>Ooops! Somethink went wrong...</Strong>
-                <SubTitle darkMode={darkMode}>Sorry, failed to load Github projects.<br />
+                <Strong>Ooops! Somethink went wrong...</Strong>
+                <SubTitle>Sorry, failed to load Github projects.<br />
                     You can check them directly on Github.</SubTitle>
                 <div><Button
                     onClick={(e) => {
@@ -41,12 +41,11 @@ const Portfolio = () => {
     }
     return (
         <div>
-            <PortfolioHeader darkMode={darkMode} />
+            <PortfolioHeader />
             <Wrapper>
                 {projects.map(project => (
                     <Tile
                         key={project.id}
-                        darkMode={darkMode}
                         head={project.name}
                         body={project.description}
                         linkRepo={project.html_url}

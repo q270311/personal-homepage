@@ -1,14 +1,11 @@
 import { StyledTile, StyledH1, StyledP } from './styled';
 
-const Tile = ({ darkMode, head, body, linkRepo, linkDemo }) => {
-    return (
-        <StyledTile darkMode={darkMode}>
-            <StyledH1 darkMode={darkMode}>{head}</StyledH1>
-            <StyledP darkMode={darkMode}>{body}</StyledP>
-            <StyledP darkMode={darkMode}>Demo: <a href={linkDemo}>{linkDemo}</a></StyledP>
-            <StyledP darkMode={darkMode}>Code: <a href={linkRepo}>{linkRepo}</a></StyledP>
-        </StyledTile>
-    );
-};
-
+const Tile = ({ head, body, linkRepo, linkDemo }) => (
+    <StyledTile>
+        <StyledH1>{head}</StyledH1>
+        <StyledP>{body}</StyledP>
+        <StyledP>Demo: <a href={linkDemo}>{linkDemo}</a></StyledP>
+        <StyledP>Code: <a href={linkRepo}>{linkRepo}</a></StyledP>
+    </StyledTile>
+);
 export default Tile;
