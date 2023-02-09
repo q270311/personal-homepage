@@ -12,7 +12,9 @@ export const themes =
             "borderToggleButton": "rgba(209, 213, 218, 0.3)",
             "mainBlue": "rgba(37, 23, 235, 1)",
             "mainBlueWhite": "rgba(37, 23, 235, 1)",
-            "iron": "rgba(209, 213, 218, 0.3)"
+            "iron": "rgba(209, 213, 218, 0.3)",
+            "violet02": "rgba(9, 10, 51, 0.02)",
+            "violet03": "rgba(9, 10, 51, 0.03)"
         },
         "breakpoint": {
             "mobileMax": 767
@@ -30,7 +32,9 @@ export const themes =
             "borderToggleButton": "white",
             "mainBlue": "rgba(37, 23, 235, 1)",
             "mainBlueWhite": "white",
-            "iron": "rgba(209, 213, 218, 0.3)"
+            "iron": "rgba(209, 213, 218, 0.3)",
+            "violet02": "rgba(9, 10, 51, 0.02)",
+            "violet03": "rgba(9, 10, 51, 0.03)"
         },
         "breakpoint": {
             "mobileMax": 767
