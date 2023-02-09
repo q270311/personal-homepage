@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const Ul = styled.ul`
     list-style: none;
@@ -18,16 +18,12 @@ export const Li = styled.li`
     font-size: 18px;
     line-height: 30px;
     letter-spacing: 0.05em;
-    color: ${({ theme }) => theme.color.slateGray};
-    
+    color: ${({ theme }) => theme.color.slateGrayWhite};
+
     &:before {
         content: "• ";
         color: ${({ theme }) => theme.color.mainBlue};
     }
-
-    ${({ darkMode }) => darkMode && css`
-        color: ${({ theme }) => theme.color.white};
-    `};
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
         font-size: 14px;
