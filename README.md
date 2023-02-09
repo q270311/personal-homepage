@@ -21,7 +21,7 @@ On the page I give links from my projects on github.
 The most important project during which I learned the most was a group project - a movie browser.
 
 
-## Languages
+## Technologies
  - HTML
  - CSS
  - BEM convention
