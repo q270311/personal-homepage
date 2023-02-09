@@ -45,7 +45,6 @@ export const BeforeName = styled.p`
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
         margin-top:12px;
-        margin-bottom:8px;
     }
 `;
 
@@ -64,7 +63,8 @@ export const Name = styled.p`
     }
 `;
 
-export const ShortDescription = styled.p`    
+export const ShortDescription = styled.p`
+    margin: 34px 0px;    
     font-weight: 400;
     font-size: 20px;
     line-height: 140%;
