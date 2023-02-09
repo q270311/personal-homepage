@@ -1,10 +1,9 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const Wrapper = styled.header`
     display: grid;
     grid-template-columns: auto 1fr 50px;
     align-items: center;    
-    border-bottom-color: ${({ theme }) => theme.color.lightGrey};
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
         padding:16px;
@@ -16,7 +15,7 @@ export const Img = styled.img`
     max-width: 398px;
     max-height: 398px;
     border-radius: 50%;
-    border: 1px solid ${({ theme }) => theme.color.lightGrey};
+    border: 1px solid ${({ theme }) => theme.color.textColor};
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
         object-fit: cover;
@@ -42,28 +41,20 @@ export const BeforeName = styled.p`
     font-size: 12px;
     line-height: 130%;
     text-transform: uppercase;
-    color: ${({ theme }) => theme.color.slateGray};
-
-    ${({ darkMode }) => darkMode && css`
-        color: ${({ theme }) => theme.color.white};
-    `};
+    color: ${({ theme }) => theme.color.slateGrayWhite};    
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
         margin-top:12px;
         margin-bottom:8px;
     }
-
 `;
+
 export const Name = styled.p`
     font-weight: 900;
     font-size: 38px;
     line-height: 46px;
     letter-spacing: 0.05em;
-    color: ${({ theme }) => theme.color.blackText};
-
-    ${({ darkMode }) => darkMode && css`
-        color: ${({ theme }) => theme.color.white};
-    `};
+    color: ${({ theme }) => theme.color.textHeader};
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
         margin:0px;
@@ -72,16 +63,13 @@ export const Name = styled.p`
         line-height: 27px;
     }
 `;
+
 export const ShortDescription = styled.p`    
     font-weight: 400;
     font-size: 20px;
     line-height: 140%;
     letter-spacing: 0.05em;
-    color: ${({ theme }) => theme.color.slateGray};
-
-    ${({ darkMode }) => darkMode && css`
-        color: ${({ theme }) => theme.color.white};
-    `};
+    color: ${({ theme }) => theme.color.textColor};
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
         margin-top:16px;
