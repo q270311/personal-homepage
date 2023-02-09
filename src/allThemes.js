@@ -3,6 +3,7 @@ export const themes =
     "whiteMode": {
         "color": {
             "white": "white",
+            "whiteMineShaft": "white",
             "mainBackground": "#FBFBFE",
             "textHeader": "#252525",
             "textColor": "#6E7E91",
@@ -18,6 +19,7 @@ export const themes =
     "darkMode": {
         "color": {
             "white": "white",
+            "whiteMineShaft": "rgba(54, 54, 54, 0.72)",
             "mainBackground": "rgba(37, 37, 37, 1)",
             "textHeader": "white",
             "textColor": "white",
