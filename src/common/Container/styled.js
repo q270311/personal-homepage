@@ -9,6 +9,10 @@ export const Main = styled.main`
     margin: 0px auto;
     padding: 115px 0px;
 
+    @media (min-width:${({ theme }) => theme.breakpoint.mobileMax}px) and (max-width: 1216px){
+        padding: 115px 20px;
+    }
+
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
         padding: 0px;
         margin: 0px;
