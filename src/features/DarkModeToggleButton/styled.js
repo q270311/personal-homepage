@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
     width: 170px;
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
-        width: 50px; 
+        width:50px; 
     }
  `;
 
@@ -25,7 +25,8 @@ export const DsscriptionOfButton = styled.p`
     color: ${({ theme }) => theme.color.textColor};
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
-        visibility:hidden;  
+        visibility:hidden; 
+        display: none;
     } 
 `;
 
