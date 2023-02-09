@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const Wrapper = styled.header`
     max-width: 700px;
@@ -16,22 +16,15 @@ export const BeforeName = styled.p`
     font-size: 12px;
     line-height: 130%;
     text-transform: uppercase;
-    color: ${({ theme }) => theme.color.slateGray};
-
-    ${({ darkMode }) => darkMode && css`
-        color: ${({ theme }) => theme.color.white};
-    `};
+    color: ${({ theme }) => theme.color.slateGrayWhite};
 `;
+
 export const Name = styled.p`      
     font-weight: 900;
     font-size: 32px;
     line-height: 39px;
     letter-spacing: 0.05em;
-    color: ${({ theme }) => theme.color.blackText};    
-
-    ${({ darkMode }) => darkMode && css`
-        color: ${({ theme }) => theme.color.white};
-    `};
+    color: ${({ theme }) => theme.color.textHeader};
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
         font-size: 18px;
@@ -39,25 +32,22 @@ export const Name = styled.p`
         margin:12px 0px;
     }
 `;
+
 export const ShortDescription = styled.p`        
     font-weight: 400;
     font-size: 20px;
     line-height: 140%;
     letter-spacing: 0.05em;
-    color: ${({ theme }) => theme.color.slateGray};
+    color: ${({ theme }) => theme.color.slateGrayWhite};
     margin-top: 24px;
     margin-bottom: 56px;
-
-    ${({ darkMode }) => darkMode && css`
-        color: ${({ theme }) => theme.color.white};
-    `};
     
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
         font-size: 14px;
         line-height: 17px;
     }
-
 `;
+
 export const SocialsMedia = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 48px);
