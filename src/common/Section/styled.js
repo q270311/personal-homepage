@@ -22,7 +22,7 @@ export const Title = styled.div`
     color: ${({ theme }) => theme.color.textHeader};
 
     padding-bottom: 16px;
-    border-bottom: 1px solid ${({ theme }) => theme.color.lightGrey};
+    border-bottom: 1px solid ${({ theme }) => theme.color.iron};
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         padding-bottom: 12px;
