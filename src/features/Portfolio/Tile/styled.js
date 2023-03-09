@@ -19,6 +19,7 @@ export const StyledTile = styled.div`
         padding: 24px;
     }
 `;
+
 export const StyledH1 = styled.h1`
     font-weight: 700;
     font-size: 24px;

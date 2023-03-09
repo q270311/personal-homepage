@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
     justify-content: center; 
     text-align:center;
 `;
+
 export const Title = styled.p`    
     font-weight: 900;
     font-size: 30px;
@@ -20,6 +21,7 @@ export const Title = styled.p`
         line-height: 22px;
     }
 `;
+
 export const SubTitle = styled.p`    
     font-weight: 400;
     font-size: 20px;
@@ -46,6 +48,7 @@ export const Button = styled.button`
     letter-spacing: 0.05em;
     color: ${({ theme }) => theme.color.white}; 
 `;
+
 export const Strong = styled.strong`
     margin-top: 35px;
     margin-bottom: 35px;

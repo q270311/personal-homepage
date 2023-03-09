@@ -8,4 +8,5 @@ const Tile = ({ head, body, linkRepo, linkDemo }) => (
         <StyledP>Code: <a href={linkRepo}>{linkRepo}</a></StyledP>
     </StyledTile>
 );
+
 export default Tile;

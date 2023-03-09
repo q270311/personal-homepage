@@ -6,7 +6,7 @@ import Container from './common/Container';
 import Portfolio from './features/Portfolio';
 import HeroAbout from './features/HeroAbout';
 import Set from './features/Set';
-import ContactsSocials from './features/Contact&socials';
+import ContactSection from './features/ContactSection';
 import { themes } from './allThemes.js';
 import { useSelector } from "react-redux";
 import { selectThemeMode } from './appSlice';
@@ -28,7 +28,7 @@ function App() {
           <Set skills={skills} title="My skillset includes 🛠" />
           <Set skills={skillsToLearnNext} title="What I want to learn next 🚀" />
           <Portfolio />
-          <ContactsSocials /> 
+          <ContactSection /> 
         </Container>      
     </ThemeProvider>
   );
