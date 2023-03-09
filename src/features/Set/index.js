@@ -7,8 +7,8 @@ const Set = ({ skills, title }) => (
         body={
             <Ul>
                 {skills.map(skill => (
-                    <Li key={skill.id}>
-                        {skill.name}
+                    <Li key={skill}>
+                        {skill}
                     </Li>
                 ))}
             </Ul>
