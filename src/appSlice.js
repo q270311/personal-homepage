@@ -13,6 +13,7 @@ const appSlice = createSlice({
         },
     },
 });
+
 export const {
     toggleThemeMode,
 } = appSlice.actions;

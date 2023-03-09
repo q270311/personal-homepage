@@ -18,6 +18,7 @@ const portfolioSlice = createSlice({
         },
     },
 });
+
 export const {
     fetchProjectsSuccess,
     fetchProjectsError,
