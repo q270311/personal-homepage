@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.header`
+export const Footer = styled.footer`
     max-width: 700px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

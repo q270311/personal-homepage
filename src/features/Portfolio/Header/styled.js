@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.div`    
     display: flex;
     flex-direction: column;
     justify-content: center; 
@@ -26,6 +26,7 @@ export const SubTitle = styled.p`
     line-height: 28px;    
     letter-spacing: 0.05em;
     color: ${({ theme }) => theme.color.textHeader}; 
+    margin-bottom: 86px;
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) { 
         font-size: 17px;
