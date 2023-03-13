@@ -5,7 +5,7 @@ import { GlobalStyle } from './GlobalStyle';
 import Container from './common/Container';
 import Portfolio from './features/Portfolio';
 import HeroAbout from './features/HeroAbout';
-import Set from './features/Set';
+import SkillsSection from './features/SkillsSection';
 import ContactSection from './features/ContactSection';
 import { themes } from './allThemes.js';
 import { useSelector } from "react-redux";
@@ -25,8 +25,8 @@ function App() {
       <GlobalStyle />      
         <Container>
           <HeroAbout />
-          <Set skills={skills} title="My skillset includes 🛠" />
-          <Set skills={skillsToLearnNext} title="What I want to learn next 🚀" />
+          <SkillsSection skills={skills} title="My skillset includes 🛠" />
+          <SkillsSection skills={skillsToLearnNext} title="What I want to learn next 🚀" />
           <Portfolio />
           <ContactSection /> 
         </Container>      
