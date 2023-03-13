@@ -1,7 +1,7 @@
 import Section from '../../common/Section';
 import { Ul, Li } from './styled';
 
-const Set = ({ skills, title }) => (
+const SkillsSection = ({ skills, title }) => (
     <Section
         title={title}
         body={
@@ -17,4 +17,4 @@ const Set = ({ skills, title }) => (
 );
 
 
-export default Set;
+export default SkillsSection;
