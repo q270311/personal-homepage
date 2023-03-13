@@ -4,6 +4,7 @@ import { StyledSection, Title } from "./styled";
 
 const Section = ({ title, body }) => {
     const darkMode = useSelector(selectThemeMode);
+    
     return (
         <StyledSection darkMode={darkMode}>
             <Title darkMode={darkMode}>

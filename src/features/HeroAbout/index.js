@@ -11,8 +11,8 @@ const HeroAbout = () => (
             <ShortDescription >👨‍🎓💻 I'm a passionate Frontend Developer in love with React, currently looking for new job opportunities.</ShortDescription>
             <Button
                 onClick={(e) => {
-                    window.location.href = "mailto:baldyga.software@gmail.com";
                     e.preventDefault();
+                    window.location.href = "mailto:baldyga.software@gmail.com";                    
                 }}>
                 📧Hire Me
             </Button>
