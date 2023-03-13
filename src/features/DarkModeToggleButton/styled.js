@@ -16,7 +16,7 @@ export const Wrapper = styled.div`
     }
  `;
 
-export const DsscriptionOfButton = styled.p`  
+export const DescriptionOfButton = styled.p`  
     padding-top: 10px;
     margin-right:10px ;
     font-weight: 700;
