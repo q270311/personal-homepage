@@ -4,17 +4,15 @@ const portfolioSlice = createSlice({
     name: "portfolio",
     initialState: {
         projects: [],
-        loading: true,
-        error: false,
+        status: "loading", 
     },
     reducers: {
         fetchProjectsSuccess: (state, { payload }) => {
             state.projects = payload;
-            state.loading = false;
+            state.status = "success";
         },
         fetchProjectsError: (state) => {
-            state.loading = false;
-            state.error = true;
+            state.status = "error";
         },
     },
 });
@@ -26,7 +24,6 @@ export const {
 
 export const selectPortfolioState = (state) => state.portfolio;
 export const selectProjects = (state) => selectPortfolioState(state).projects;
-export const selectStatus = (state) => selectPortfolioState(state).loading;
-export const selectError = (state) => selectPortfolioState(state).error;
+export const selectStatus = (state) => selectPortfolioState(state).status;
 
 export default portfolioSlice.reducer;
