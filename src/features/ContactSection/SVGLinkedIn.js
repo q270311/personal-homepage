@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react';
 const SVGLinkedIn = (props) => (
   <svg
     width={48}

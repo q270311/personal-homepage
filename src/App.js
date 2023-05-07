@@ -7,9 +7,9 @@ import HeroAbout from './features/HeroAbout';
 import SkillsSection from './features/SkillsSection';
 import ContactSection from './features/ContactSection';
 import { themes } from './allThemes.js';
-import { useSelector } from "react-redux";
+import { useSelector } from 'react-redux';
 import { selectThemeMode } from './appSlice';
-import {skills, skillsToLearnNext} from './skills';
+import { skills, skillsToLearnNext } from './skills';
 
 function App() {
   const darkMode = useSelector(selectThemeMode);
@@ -21,14 +21,20 @@ function App() {
 
   return (
     <ThemeProvider theme={selectedTheme}>
-      <GlobalStyle />      
-        <Container>
-          <HeroAbout />
-          <SkillsSection skills={skills} title="My skillset includes 🛠" />
-          <SkillsSection skills={skillsToLearnNext} title="What I want to learn next 🚀" />
-          <Portfolio />
-          <ContactSection /> 
-        </Container>
+      <GlobalStyle />
+      <Container>
+        <HeroAbout />
+        <SkillsSection
+          skills={skills}
+          title="My skillset includes 🛠"
+        />
+        <SkillsSection
+          skills={skillsToLearnNext}
+          title="What I want to learn next 🚀"
+        />
+        <Portfolio />
+        <ContactSection />
+      </Container>
     </ThemeProvider>
   );
 }

@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
     html {
@@ -19,4 +19,4 @@ export const GlobalStyle = createGlobalStyle`
         background-color: ${({ theme }) => theme.color.mainBackground}; 
         transition: background-color 800ms linear;
     }
-`; 
+`;

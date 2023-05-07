@@ -1,13 +1,11 @@
-import axios from "axios";
+import axios from 'axios';
 
 export const getProjectsFromGithub = async () => {
-    const response = await axios.get("https://api.github.com/users/q270311/repos");
+  const response = await axios.get('https://api.github.com/users/q270311/repos');
 
-    if (!response.ok) {
-        new Error(response.statusText);
-    }
+  if (!response.ok) {
+    new Error(response.statusText);
+  }
 
-    return await response.data;
+  return await response.data;
 };
-
-
