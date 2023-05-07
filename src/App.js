@@ -1,6 +1,5 @@
 import { ThemeProvider } from 'styled-components';
 import { useState, useEffect } from 'react';
-// import { theme } from './theme';
 import { GlobalStyle } from './GlobalStyle';
 import Container from './common/Container';
 import Portfolio from './features/Portfolio';
@@ -29,7 +28,7 @@ function App() {
           <SkillsSection skills={skillsToLearnNext} title="What I want to learn next 🚀" />
           <Portfolio />
           <ContactSection /> 
-        </Container>      
+        </Container>
     </ThemeProvider>
   );
 }
