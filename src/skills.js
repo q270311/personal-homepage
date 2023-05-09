@@ -13,10 +13,10 @@ export const skills = [
   'React Hooks',
   'Error handling',
   'Working with API (fetch, axios)',
-  // eslint-disable-next-line
   'TanStack Query v4',
   'Promises, Async/Await',
   'Express.js',
+  // eslint-disable-next-line
   'JavaScript: ES6+',
   'GitHub Pull Requests & Review',
   'Trello',
